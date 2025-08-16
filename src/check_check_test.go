@@ -8,6 +8,9 @@ func TestCheckCheck(t *testing.T) {
 	result := checkCheck()
 	want := 5
 	if result != want {
-		t.Errorf("incorrect return")
+		t.Errorf(`
+		Expect: '%v'
+		Received: '%v'`,
+			result, want)
 	}
 }

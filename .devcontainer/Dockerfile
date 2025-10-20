@@ -1,6 +1,6 @@
 FROM debian:stable-slim
 
-ARG GO_VERSION=1.23.0
+ARG GO_VERSION=1.24.0
 
 ENV GOPATH=/go
 ENV GOBIN=${GOPATH}/bin
